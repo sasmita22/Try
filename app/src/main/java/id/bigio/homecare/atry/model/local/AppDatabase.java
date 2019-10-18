@@ -13,7 +13,7 @@ import androidx.sqlite.db.SupportSQLiteOpenHelper;
 import id.bigio.homecare.atry.model.Company;
 import id.bigio.homecare.atry.model.Employee;
 
-@Database(entities = {Company.class, Employee.class},version = 1)
+@Database(entities = {Company.class, Employee.class},version = 1,exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase instance;
 

@@ -14,6 +14,8 @@ import id.bigio.homecare.atry.model.Employee;
 public class MainViewModel extends AndroidViewModel {
     MutableLiveData<List<Company>> companyLiveData = new MutableLiveData<>();
     MutableLiveData<List<Employee>> employeeLiveData = new MutableLiveData<>();
+    MutableLiveData<Boolean> isLoading = new MutableLiveData<>();
+    MutableLiveData<Boolean> isError = new MutableLiveData<>();
 
     public MainViewModel(@NonNull Application application) {
         super(application);
